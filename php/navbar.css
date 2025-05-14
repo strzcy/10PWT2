@@ -1,0 +1,157 @@
+/* Navbar */
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 10px; /* Menghilangkan padding */
+    box-sizing: border-box;
+}
+
+nav a, nav span {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+}
+
+nav a, nav span {
+    padding: 15px 20px;
+}
+
+.user-menu {
+    position: relative;
+    display: flex; /* Mengatur sebagai flex agar mudah disejajarkan */
+    align-items: center; /* Menyelaraskan username secara vertikal */
+    color: white;
+    cursor: pointer;
+}
+
+.username {
+    padding: 15px 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Posisi dropdown di bawah username */
+    right: 0;
+    background-color: #333;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #4CAF50;
+}
+
+/* Tampilkan dropdown saat user-menu di-hover */
+.user-menu:hover .dropdown-content {
+    display: block;
+}
+
+/* Memberikan padding pada wrapper konten utama */
+.content-wrapper {
+    padding: 0px 20px; /* Atur jarak sesuai kebutuhan */
+    box-sizing: border-box; /* Memastikan padding tidak menambah lebar elemen */
+    background-color: #f4f4f9; /* Sesuaikan jika ingin warna berbeda */
+}
+
+
+        /* Halaman Utama */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0px;
+        }
+
+        h2, h3 {
+            color: #333;
+        }
+
+        /* Tabel Karyawan */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        /* Form Tambah Karyawan */
+        form {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Aksi Tombol Edit dan Hapus */
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            text-align:center;
+        }
